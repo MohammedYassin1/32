@@ -58,5 +58,5 @@ public Supply[] getSupply(){return this.personalBelongings;}
 public String getGender(){return this.gender;}
 public int getCounter(){return this.counter;}
 
-
+/*functions */
 

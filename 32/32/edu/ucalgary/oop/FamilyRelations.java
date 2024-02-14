@@ -1,4 +1,5 @@
 package edu.calgary.oop; /*?*/
+import edu.calgary.oop.DisasterVictim;
 
 public class FamilyRelation {
     private DisasterVictim personOne;
