@@ -62,3 +62,12 @@ public int getCounter(){return this.counter;}
 
 /*functions */
 
+public void addPersonalBelonging(Supply supply) {}
+
+public void removePersonalBelonging(Supply supply) {}
+
+public void addFamilyConnection(FamilyRelation familyConnection) {}
+
+public void removeFamilyConnection(FamilyRelation familyConnection) {}
+
+public void addMedicalRecord(MedicalRecord medicalRecord){}

@@ -27,3 +27,9 @@ public String getAddress(){return this.address;}
 public DisasterVictim[] getOccupants(){return this.occupants;}
 public supply[] getSupplies(){return this.supplies;}
 
+/*functions*/
+
+public void  addOccupant(DisasterVictim occupant){}
+public void  removeOccupant(DisasterVictim occupant){}
+public void addSupply(Supply supply){}
+public void removeSupply(Supply supply){}
