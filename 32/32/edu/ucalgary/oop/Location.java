@@ -22,8 +22,8 @@ public void setSupplies(supply[] supplies){this.supplies = supplies;}
 
 /*getters */
 
-public String setName(){return this.name;}
-public String setAddress(){return this.address;}
-public DisasterVictim[] setOccupants(){return this.occupants;}
-public supply[] setSupplies(){return this.supplies;}
+public String getName(){return this.name;}
+public String getAddress(){return this.address;}
+public DisasterVictim[] getOccupants(){return this.occupants;}
+public supply[] getSupplies(){return this.supplies;}
 
