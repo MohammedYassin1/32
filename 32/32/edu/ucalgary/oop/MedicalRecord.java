@@ -1,3 +1,5 @@
+import edu.calgary.oop.Location;
+
 public class MedicalRecord{
     private Location location;
     private String treatmentDetails;

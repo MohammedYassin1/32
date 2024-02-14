@@ -1,4 +1,6 @@
-package edu.calgary.oop; /*?*/
+import edu.calgary.oop.MedicalRecord;
+import edu.calgary.oop.FamilyRelation;
+import edu.calgary.oop.Supply;
 
 public class DisasterVictim {
     private String firstName;

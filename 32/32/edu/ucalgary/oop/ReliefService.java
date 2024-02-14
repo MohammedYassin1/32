@@ -1,5 +1,6 @@
 import edu.calgary.oop.DisasterVictim;
 import edu.calgary.oop.Inquirer;
+import edu.calgary.oop.Location;
 
 public class ReliefService{
     private Inquirer inquirer;
