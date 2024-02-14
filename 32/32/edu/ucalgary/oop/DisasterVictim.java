@@ -1,4 +1,4 @@
-package edu.calgary.oop;
+package edu.calgary.oop; /*?*/
 
 public class DisasterVictim {
     private String firstName;
