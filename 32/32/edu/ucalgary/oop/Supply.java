@@ -3,17 +3,18 @@ public class Supply{
     private int quantity;
 
     public Supply(String type, int quantity){
-        setType(type);
-        setQuantity(quantity);
-    } 
+        this.type = type;
+        this.quantity = quantity;
+    }
+    
+    /*setters*/
+
+    public void setType(String type){this.type = type;}
+    public void setQuantity(int quantity){this.quantity = quantity;}
+
+    /*getters*/
+
+    public String getType(){return this.type;}
+    public int getQuantity(){return this.quantity;}    
 }
 
-/*setters*/
-
-public void setType(String type){this.type = type;}
-public void setQuantity(int quantity){this.quantity = quantity;}
-
-/*getters*/
-
-public String getType(){return this.type;}
-public int getQuantity(){return this.quantity;}

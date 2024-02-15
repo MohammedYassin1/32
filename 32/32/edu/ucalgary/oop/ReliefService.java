@@ -1,6 +1,6 @@
-import edu.calgary.oop.DisasterVictim;
-import edu.calgary.oop.Inquirer;
-import edu.calgary.oop.Location;
+import edu.ucalgary.oop.DisasterVictim;
+import edu.ucalgary.oop.Inquirer;
+import edu.ucalgary.oop.Location;
 
 public class ReliefService{
     private Inquirer inquirer;
@@ -10,26 +10,28 @@ public class ReliefService{
     private Location lastKnownLocation;
 
     public ReliefService(Inquirer inquirer, DisasterVictim missingPerson, String dateOfInquiry, String infoProvided, Location lastKnownLocation){
-        setInquirer(inquirer);
-        setMissingPerson(missingPerson);
-        setDateOfInquiry(dateOfInquiry);
-        setInfoProvided(infoProvided);
-        setLastKnownLocation(lastKnownLocation);
+        this.inquirer = inquirer;
+        this.missingPerson = missingPerson;
+        this.dateOfInquiry = dateOfInquiry;
+        this.infoProvided = infoProvided;
+        this.lastKnownLocation = lastKnownLocation;
     }
+    
+    /*setters*/
+
+    public void setInquirer(Inquirer inquirer){this.inquirer = inquirer;}
+    public void setMissingPerson(DisasterVictim missingPerson){this.missingPerson = missingPerson;}
+    public void setDateOfInquiry(String dateOfInquiry){this.dateOfInquiry = dateOfInquiry;}
+    public void setInfoProvided(String infoProvided){this.infoProvided = infoProvided;}
+    public void setLastKnownLocation(Location lastKnowLocation){this.lastKnownLocation = lastKnowLocation;}
+
+    /*getters*/
+
+    public Inquirer getInquirer(){return this.inquirer;}
+    public DisasterVictim getMissingPerson(){return this.missingPerson;}
+    public String getDateOfInquiry(){return this.dateOfInquiry;}
+    public String getInfoProvided(){return this.infoProvided;}
+    public Location getLastKnownLocation(){return this.lastKnownLocation;}
 }
-/*setters*/
 
-public void setInquirer(Inquirer inquirer){this.inquirer = inquirer;}
-public void setMissingPerson(DisasterVictim missingPerson){this.missingPerson = missingPerson;}
-public void setDateOfInquiry(String dateOfInquiry){this.dateOfInquiry = dateOfInquiry;}
-public void setInfoProvided(String infoProvided){this.infoProvided = infoProvided;}
-public void setLastKnownLocation(Location lastKnowLocation){this.lastKnownLocation = lastKnowLocation;}
-
-/*getters*/
-
-public Inquirer getInquirer(){return this.inquirer;}
-public DisasterVictim getMissingPerson(){return this.missingPerson;}
-public String getDateOfInquiry(){return this.dateOfInquiry;}
-public String getInfoProvided(){return this.infoProvided;}
-public Location getLastKnownLocation(){return this.lastKnownLocation;}
 

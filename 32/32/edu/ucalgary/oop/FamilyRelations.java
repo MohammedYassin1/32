@@ -6,19 +6,19 @@ public class FamilyRelations {
     private DisasterVictim personTwo;
 
     public FamilyRelations(DisasterVictim personOne, String relationshipTo, DisasterVictim personTwo){
-       setPersonOne(personOne);
-       setRelationshipTo(relationshipTo);
-       setPersonTwo(personTwo);
+        this.personOne = personOne;
+        this.relationshipTo = relationshipTo;
+        this.personTwo = personTwo;
     }
+    /*setters*/
+
+    public void setPersonOne(DisasterVictim personOne){this.personOne = personOne;}
+    public void setRelationshipTo(String relationshipTo){this.relationshipTo = relationshipTo;}
+    public void setPersonTwo(DisasterVictim personTwo){this.personTwo = personTwo;}
+
+    /*getters*/
+
+    public DisasterVictim getPersonOne(){return this.personOne;}
+    public String getRelationshipTo(){return this.relationshipTo;}
+    public DisasterVictim getPersonTwo(){return this.personTwo;}
 }
-/*setters*/
-
-public void setPersonOne(DisasterVictim personOne){this.personOne = personOne;}
-public void setRelationshipTo(String relationshipTo){this.relationshipTo = relationshipTo;}
-public void setPersonTwo(DisasterVictim personTwo){this.personTwo = personTwo;}
-
-/*getters*/
-
-public DisasterVictim getPersonOne(){return this.personOne;}
-public String getRelationshipTo(){return this.relationshipTo;}
-public DisasterVictim getPersonTwo(){return this.personTwo;}
