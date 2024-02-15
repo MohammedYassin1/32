@@ -5,7 +5,7 @@ public class Location{
     private String name;
     private String address;
     private DisasterVictim[] occupants;
-    private supply[] supplies;
+    private Supply[] supplies;
 
     public Location(String name, String address){
         setName(name);
@@ -25,7 +25,7 @@ public void setSupplies(supply[] supplies){this.supplies = supplies;}
 public String getName(){return this.name;}
 public String getAddress(){return this.address;}
 public DisasterVictim[] getOccupants(){return this.occupants;}
-public supply[] getSupplies(){return this.supplies;}
+public Supply[] getSupplies(){return this.supplies;}
 
 /*functions*/
 

@@ -1,4 +1,4 @@
-package edu.calgary.oop; /*?*/
+
 
 public class Inquirer {
     private String FIRST_NAME;
@@ -13,13 +13,13 @@ public class Inquirer {
         setSERVICES_PHONE(SERVICES_PHONE);
     }
 }
-/*setter UNNEEDED*/
-/* 
+/*setter*/
+ 
 public void setFIRST_NAME(String FIRST_NAME) {this.FIRST_NAME = FIRST_NAME;}
 public void setLAST_NAME(String LAST_NAME) {this.LAST_NAME = LAST_NAME;}
 public void setINFO(String INFO) {this.INFO = INFO;}
 public void setSERVICES_PHONE(String SERVICES_PHONE) {this.SERVICES_PHONE = SERVICES_PHONE;}
-*/
+
 
 /*setter*/
 

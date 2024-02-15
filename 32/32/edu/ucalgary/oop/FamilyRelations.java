@@ -1,11 +1,11 @@
 import edu.calgary.oop.DisasterVictim;
 
-public class FamilyRelation {
+public class FamilyRelations {
     private DisasterVictim personOne;
     private String relationshipTo;
     private DisasterVictim personTwo;
 
-    public FamilyRelation(DisasterVictim personOne, String relationshipTo, DisasterVictim personTwo){
+    public FamilyRelations(DisasterVictim personOne, String relationshipTo, DisasterVictim personTwo){
        setPersonOne(personOne);
        setRelationshipTo(relationshipTo);
        setPersonTwo(personTwo);

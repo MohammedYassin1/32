@@ -18,7 +18,7 @@ public class DisasterVictim {
     public DisasterVictim(String firstName, String ENTRY_DATE) throws IllegalArgumentException{
         /*add if statment and IllegalArgumentExcemption */
         this.setFirstName(firstName);
-        this.setENTERYDATE(ENTRY_DATE)
+        this.setENTRY_DATE(ENTRY_DATE);
     }
 
 }
@@ -35,7 +35,7 @@ public void setComments(String comments){this.comments = comments;}
 public void setASSIGNED_SOCIAL_ID(int ASSIGNED_SOCIAL_ID){this.ASSIGNED_SOCIAL_ID = ASSIGNED_SOCIAL_ID;}
 public void setMedicalRecord(MedicalRecord[] medicalRecords){this.medicalRecords = medicalRecords;}
 public void setFamilyRelations(FamilyRelation[] familyConnections){this.familyConnections = familyConnections;}
-public void setENTRY_DATE(Sting ENTRY_DATE){this.ENTRY_DATE = ENTRY_DATE;}
+public void setENTRY_DATE(String ENTRY_DATE){this.ENTRY_DATE = ENTRY_DATE;}
 public void setSupply(Supply[] personalBelongings){this.personalBelongings = personalBelongings;}
 public void setGender(String gender){this.gender = gender;}
 public void setCounter(int counter){this.counter = counter;}
@@ -62,7 +62,9 @@ public int getCounter(){return this.counter;}
 
 /*functions */
 
-public void addPersonalBelonging(Supply supply) {}
+public void addPersonalBelonging(Supply supply) {
+    
+}
 
 public void removePersonalBelonging(Supply supply) {}
 
