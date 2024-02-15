@@ -1,6 +1,4 @@
-import edu.ucalgary.oop.MedicalRecord;
-import edu.ucalgary.oop.FamilyRelation;
-import edu.ucalgary.oop.Supply;
+package edu.ucalgary.oop;
 
 import java.util.ArrayList;
 import java.util.Arrays;

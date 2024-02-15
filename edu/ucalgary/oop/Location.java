@@ -1,5 +1,4 @@
-import edu.ucalgary.oop.DisasterVictim;
-import edu.ucalgary.oop.supply;
+package edu.ucalgary.oop;
 
 public class Location{
     private String name;

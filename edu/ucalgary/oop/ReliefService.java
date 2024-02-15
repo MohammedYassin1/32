@@ -1,6 +1,4 @@
-import edu.ucalgary.oop.DisasterVictim;
-import edu.ucalgary.oop.Inquirer;
-import edu.ucalgary.oop.Location;
+package edu.ucalgary.oop;
 
 public class ReliefService{
     private Inquirer inquirer;

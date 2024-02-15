@@ -1,4 +1,4 @@
-
+package edu.ucalgary.oop;
 
 public class Inquirer {
     private String FIRST_NAME;

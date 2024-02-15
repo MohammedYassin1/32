@@ -1,4 +1,4 @@
-import edu.ucalgary.oop.Location;
+package edu.ucalgary.oop;
 
 public class MedicalRecord{
     private Location location;
