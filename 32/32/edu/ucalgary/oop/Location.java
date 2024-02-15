@@ -18,7 +18,7 @@ public class Location{
 public void setName(String name){this.name = name;}
 public void setAddress(String address){this.address = address;}
 public void setOccupants(DisasterVictim[] occupants){this.occupants = occupants;}
-public void setSupplies(supply[] supplies){this.supplies = supplies;}
+public void setSupplies(Supply[] supplies){this.supplies = supplies;}
 
 /*getters */
 
