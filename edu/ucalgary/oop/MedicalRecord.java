@@ -15,7 +15,7 @@ public class MedicalRecord{
         boolean valid_date = match.find();
 
         if(!valid_date){
-            throw new IllegalArgumentException("Invalid format for date. Please use YYYY-MM-DD.");
+            throw new IllegalArgumentException("Invalid format for date. Please use format: YYYY-MM-DD.");
         }
         this.location = location;
         this.treatmentDetails = treatmentDetails;
@@ -31,9 +31,8 @@ public class MedicalRecord{
         boolean valid_date = match.find();
 
         if(!valid_date){
-            throw new IllegalArgumentException("Invalid format for date. Please use YYYY-MM-DD.");
+            throw new IllegalArgumentException("Invalid format for date. Please use format: YYYY-MM-DD.");
         }
-   
     }
 
 
