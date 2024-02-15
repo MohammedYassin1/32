@@ -1,6 +1,7 @@
 package edu.ucalgary.oop;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.*;
 
 public class DisasterVictim {
@@ -14,7 +15,7 @@ public class DisasterVictim {
     private final String ENTRY_DATE;
     private ArrayList<Supply> personalBelongings;
     private String gender;
-    private static int counter;
+    private static int counter = 0;
     private static final String REGEX = "\\d{4}-\\d{2}-\\d{2}";
 	private static final Pattern PATTERN = Pattern.compile(REGEX);
 
@@ -42,43 +43,43 @@ public class DisasterVictim {
 
     //Getters
     public String getFirstName(){
-        return firstName;
+        return this.firstName;
     }
 
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     public String getDateOfBirth(){
-        return dateOfBirth;
+        return this.dateOfBirth;
     }
 
     public String getComments(){
-        return comments;
+        return this.comments;
     }
 
-    public int getAssignedSocialId(){
-        return ASSIGNED_SOCIAL_ID;
+    public int getAssignedSocialID(){
+        return this.ASSIGNED_SOCIAL_ID;
     }
 
-    public ArrayList<MedicalRecord> getMedicalRecords(){
-        return medicalRecords;
+    public MedicalRecord[] getMedicalRecords(){
+        return this.medicalRecords.toArray(new MedicalRecord[0]);
     }
 
-    public ArrayList<FamilyRelation> getFamilyConnections(){
-        return familyConnections;
+    public FamilyRelation[] getFamilyConnections(){
+        return this.familyConnections.toArray(new FamilyRelation[0]);
     }
 
     public String getEntryDate(){
-        return ENTRY_DATE;
+        return this.ENTRY_DATE;
     }
 
-    public ArrayList<Supply> getPersonalBelongings(){
-        return personalBelongings;
+    public Supply[] getPersonalBelongings(){
+        return this.personalBelongings.toArray(new Supply[0]);
     }
 
     public String getGender(){
-        return gender;
+        return this.gender;
     }
 
     //Setters
@@ -108,34 +109,35 @@ public class DisasterVictim {
         this.gender = gender;
     }
 
-    public void setMedicalRecords(ArrayList<MedicalRecord> medicalRecords){
-        this.medicalRecords = medicalRecords;
+    public void setMedicalRecords(MedicalRecord[] medicalRecords){
+        this.medicalRecords = new ArrayList<>(Arrays.asList(medicalRecords));
     }
 
-    public void setFamilyConnections(ArrayList<FamilyRelation> familyConnections){
-        this.familyConnections = familyConnections;
+    public void setFamilyConnections(FamilyRelation[] familyConnections){
+        this.familyConnections = new ArrayList<>(Arrays.asList(familyConnections));
     }
 
-    public void setPersonalBelongings(ArrayList<Supply> personalBelongings){
-        this.personalBelongings = personalBelongings;
+    public void setPersonalBelongings(Supply[] personalBelongings){
+        this.personalBelongings = new ArrayList<>(Arrays.asList(personalBelongings));
     }
+    
     public void addPersonalBelonging(Supply supply) {
-        personalBelongings.add(supply);
+        this.personalBelongings.add(supply);
     }
 
     public void removePersonalBelonging(Supply supply) {
-        personalBelongings.remove(supply);
+        this.personalBelongings.remove(supply);
     }
 
     public void addFamilyConnection(FamilyRelation familyConnection) {
-        familyConnections.add(familyConnection);
+        this.familyConnections.add(familyConnection);
     }
 
     public void removeFamilyConnection(FamilyRelation familyConnection) {
-        familyConnections.remove(familyConnection);
+        this.familyConnections.remove(familyConnection);
     }
 
     public void addMedicalRecord(MedicalRecord medicalRecord) {
-        medicalRecords.add(medicalRecord);
+        this.medicalRecords.add(medicalRecord);
     }
 }

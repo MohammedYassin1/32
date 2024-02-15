@@ -14,9 +14,8 @@ public class Inquirer {
     }
     /*getter*/
 
-    public String getFIRST_NAME() {return this.FIRST_NAME;}
-    public String getLAST_NAME() {return this.LAST_NAME;}
-    public String getINFO() {return this.INFO;}
-    public String getSERVICES_PHONE() {return this.SERVICES_PHONE;}
+    public String getFirstName() {return this.FIRST_NAME;}
+    public String getLastName() {return this.LAST_NAME;}
+    public String getInfo() {return this.INFO;}
+    public String getServicesPhoneNum() {return this.SERVICES_PHONE;}
     }
-

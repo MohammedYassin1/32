@@ -43,6 +43,14 @@ public class ReliefService{
     public String getDateOfInquiry(){return this.dateOfInquiry;}
     public String getInfoProvided(){return this.infoProvided;}
     public Location getLastKnownLocation(){return this.lastKnownLocation;}
+    public String getLogDetails() {
+        
+        return "Inquirer: " + this.getInquirer() +
+        ", Missing Person: " + this.getMissingPerson() +
+        ", Date of Inquiry: " + this.getDateOfInquiry() +
+        ", Info Provided: " + this.getInfoProvided() +
+        ", Last Known Location: " + this.getLastKnownLocation();
+    }
 }
 
 
