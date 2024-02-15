@@ -1,4 +1,4 @@
-import edu.calgary.oop.DisasterVictim;
+import edu.ucalgary.oop.DisasterVictim;
 
 public class FamilyRelations {
     private DisasterVictim personOne;

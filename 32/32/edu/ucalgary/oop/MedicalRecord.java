@@ -1,4 +1,4 @@
-import edu.calgary.oop.Location;
+import edu.ucalgary.oop.Location;
 
 public class MedicalRecord{
     private Location location;

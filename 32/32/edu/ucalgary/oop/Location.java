@@ -1,5 +1,5 @@
-import edu.calgary.oop.DisasterVictim;
-import edu.calgary.oop.supply;
+import edu.ucalgary.oop.DisasterVictim;
+import edu.ucalgary.oop.supply;
 
 public class Location{
     private String name;

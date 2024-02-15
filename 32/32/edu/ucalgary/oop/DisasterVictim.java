@@ -1,6 +1,6 @@
-import edu.calgary.oop.MedicalRecord;
-import edu.calgary.oop.FamilyRelation;
-import edu.calgary.oop.Supply;
+import edu.ucalgary.oop.MedicalRecord;
+import edu.ucalgary.oop.FamilyRelation;
+import edu.ucalgary.oop.Supply;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,7 +63,6 @@ public class DisasterVictim {
     /*functions */
 
     public void addPersonalBelonging(Supply supply) {
-        Supply temp = new 
         
     }
 
