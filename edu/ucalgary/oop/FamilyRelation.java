@@ -12,13 +12,13 @@ public class FamilyRelation {
     }
     /*setters*/
 
-    public void setPersonOne(DisasterVictim personOne){this.personOne = personOne;}
-    public void setRelationshipTo(String relationshipTo){this.relationshipTo = relationshipTo;}
-    public void setPersonTwo(DisasterVictim personTwo){this.personTwo = personTwo;}
+    public void setPersonOne(DisasterVictim personOne){ this.personOne = personOne;}
+    public void setRelationshipTo(String relationshipTo){ this.relationshipTo = relationshipTo;}
+    public void setPersonTwo(DisasterVictim personTwo){ this.personTwo = personTwo;}
 
     /*getters*/
 
-    public DisasterVictim getPersonOne(){return this.personOne;}
-    public String getRelationshipTo(){return this.relationshipTo;}
-    public DisasterVictim getPersonTwo(){return this.personTwo;}
+    public DisasterVictim getPersonOne(){ return this.personOne;}
+    public String getRelationshipTo(){ return this.relationshipTo;}
+    public DisasterVictim getPersonTwo(){ return this.personTwo;}
 }

@@ -10,12 +10,12 @@ public class Supply{
     
     /*setters*/
 
-    public void setType(String type){this.type = type;}
-    public void setQuantity(int quantity){this.quantity = quantity;}
+    public void setType(String type){ this.type = type;}
+    public void setQuantity(int quantity){ this.quantity = quantity;}
 
     /*getters*/
 
-    public String getType(){return this.type;}
-    public int getQuantity(){return this.quantity;}    
+    public String getType(){ return this.type;}
+    public int getQuantity(){ return this.quantity;}    
 }
 

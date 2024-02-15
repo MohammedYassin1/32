@@ -42,25 +42,15 @@ public class DisasterVictim {
     }
 
     //Getters
-    public String getFirstName(){
-        return this.firstName;
-    }
+    public String getFirstName(){ return this.firstName;}
 
-    public String getLastName(){
-        return this.lastName;
-    }
+    public String getLastName(){ return this.lastName;}
 
-    public String getDateOfBirth(){
-        return this.dateOfBirth;
-    }
+    public String getDateOfBirth(){ return this.dateOfBirth;}
 
-    public String getComments(){
-        return this.comments;
-    }
+    public String getComments(){ return this.comments;}
 
-    public int getAssignedSocialID(){
-        return this.ASSIGNED_SOCIAL_ID;
-    }
+    public int getAssignedSocialID(){ return this.ASSIGNED_SOCIAL_ID;}
 
     public MedicalRecord[] getMedicalRecords(){
         return this.medicalRecords.toArray(new MedicalRecord[0]);
@@ -70,26 +60,18 @@ public class DisasterVictim {
         return this.familyConnections.toArray(new FamilyRelation[0]);
     }
 
-    public String getEntryDate(){
-        return this.ENTRY_DATE;
-    }
+    public String getEntryDate(){ return this.ENTRY_DATE;}
 
     public Supply[] getPersonalBelongings(){
         return this.personalBelongings.toArray(new Supply[0]);
     }
 
-    public String getGender(){
-        return this.gender;
-    }
+    public String getGender(){ return this.gender;}
 
     //Setters
-    public void setFirstName(String firstName){
-        this.firstName = firstName;
-    }
+    public void setFirstName(String firstName){ this.firstName = firstName;}
 
-    public void setLastName(String lastName){
-        this.lastName = lastName;
-    }
+    public void setLastName(String lastName){ this.lastName = lastName;}
 
     public void setDateOfBirth(String dateOfBirth) throws IllegalArgumentException{
         Matcher match = PATTERN.matcher(dateOfBirth);
@@ -101,13 +83,9 @@ public class DisasterVictim {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public void setComments(String comments){
-        this.comments = comments;
-    }
+    public void setComments(String comments){ this.comments = comments;}
 
-    public void setGender(String gender){
-        this.gender = gender;
-    }
+    public void setGender(String gender){ this.gender = gender;}
 
     public void setMedicalRecords(MedicalRecord[] medicalRecords){
         this.medicalRecords = new ArrayList<>(Arrays.asList(medicalRecords));

@@ -12,7 +12,8 @@ public class ReliefService{
     private static final String REGEX = "\\d{4}-\\d{2}-\\d{2}";
 	private static final Pattern PATTERN = Pattern.compile(REGEX);
 
-    public ReliefService(Inquirer inquirer, DisasterVictim missingPerson, String dateOfInquiry, String infoProvided, Location lastKnownLocation){
+    public ReliefService(Inquirer inquirer, DisasterVictim missingPerson,
+            String dateOfInquiry, String infoProvided, Location lastKnownLocation){
         this.inquirer = inquirer;
         this.missingPerson = missingPerson;
         this.dateOfInquiry = dateOfInquiry;
@@ -22,8 +23,8 @@ public class ReliefService{
     
     /*setters*/
 
-    public void setInquirer(Inquirer inquirer){this.inquirer = inquirer;}
-    public void setMissingPerson(DisasterVictim missingPerson){this.missingPerson = missingPerson;}
+    public void setInquirer(Inquirer inquirer){ this.inquirer = inquirer;}
+    public void setMissingPerson(DisasterVictim missingPerson){ this.missingPerson = missingPerson;}
     public void setDateOfInquiry(String dateOfInquiry) throws IllegalArgumentException{
         Matcher match = PATTERN.matcher(dateOfInquiry);
         boolean valid_date = match.find();
@@ -33,18 +34,17 @@ public class ReliefService{
         }
         this.dateOfInquiry = dateOfInquiry;
     }
-    public void setInfoProvided(String infoProvided){this.infoProvided = infoProvided;}
-    public void setLastKnownLocation(Location lastKnowLocation){this.lastKnownLocation = lastKnowLocation;}
+    public void setInfoProvided(String infoProvided){ this.infoProvided = infoProvided;}
+    public void setLastKnownLocation(Location lastKnowLocation){ this.lastKnownLocation = lastKnowLocation;}
 
     /*getters*/
 
-    public Inquirer getInquirer(){return this.inquirer;}
-    public DisasterVictim getMissingPerson(){return this.missingPerson;}
-    public String getDateOfInquiry(){return this.dateOfInquiry;}
-    public String getInfoProvided(){return this.infoProvided;}
-    public Location getLastKnownLocation(){return this.lastKnownLocation;}
+    public Inquirer getInquirer(){ return this.inquirer;}
+    public DisasterVictim getMissingPerson(){ return this.missingPerson;}
+    public String getDateOfInquiry(){ return this.dateOfInquiry;}
+    public String getInfoProvided(){ return this.infoProvided;}
+    public Location getLastKnownLocation(){ return this.lastKnownLocation;}
     public String getLogDetails() {
-        
         return "Inquirer: " + this.getInquirer().getFirstName() +
         ", Missing Person: " + this.getMissingPerson().getFirstName() +
         ", Date of Inquiry: " + this.getDateOfInquiry() +
