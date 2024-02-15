@@ -26,7 +26,7 @@ public class DisasterVictim {
         boolean valid_date = match.find();
 
         if(!valid_date){
-            throw new IllegalArgumentException("Invalid format for date. Please use YYYY-MM-DD.");
+            throw new IllegalArgumentException("Invalid format for date. Please use format: YYYY-MM-DD.");
         }
         this.firstName = firstName;
         this.ENTRY_DATE = ENTRY_DATE;
