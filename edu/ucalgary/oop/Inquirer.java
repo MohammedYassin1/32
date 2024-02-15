@@ -6,7 +6,7 @@ public class Inquirer {
     private String INFO;
     private String SERVICES_PHONE;
 
-    public Inquirer(String FIRST_NAME, String LAST_NAME, String INFO, String SERVICES_PHONE){
+    public Inquirer(String FIRST_NAME, String LAST_NAME, String SERVICES_PHONE, String INFO){
         this.FIRST_NAME = FIRST_NAME;
         this.LAST_NAME = LAST_NAME;
         this.INFO = INFO;

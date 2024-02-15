@@ -45,11 +45,11 @@ public class ReliefService{
     public Location getLastKnownLocation(){return this.lastKnownLocation;}
     public String getLogDetails() {
         
-        return "Inquirer: " + this.getInquirer() +
-        ", Missing Person: " + this.getMissingPerson() +
+        return "Inquirer: " + this.getInquirer().getFirstName() +
+        ", Missing Person: " + this.getMissingPerson().getFirstName() +
         ", Date of Inquiry: " + this.getDateOfInquiry() +
         ", Info Provided: " + this.getInfoProvided() +
-        ", Last Known Location: " + this.getLastKnownLocation();
+        ", Last Known Location: " + this.getLastKnownLocation().getName();
     }
 }
 
