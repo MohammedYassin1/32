@@ -1,7 +1,6 @@
 package edu.ucalgary.oop;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.regex.*;
 
 public class DisasterVictim {
